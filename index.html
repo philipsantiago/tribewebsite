@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tribe — Less phone, more life.</title>
+  <meta name="description" content="Tribe is the iPhone app that turns cutting screen time into a team sport. Your monkey cheers when you stay under your limit, and your tribe wins or loses the day together." />
+  <meta property="og:title" content="Tribe — Less phone, more life." />
+  <meta property="og:description" content="Cut screen time with your friends. Streaks, bananas and a monkey who's rooting for you." />
+  <meta property="og:image" content="https://philipsantiago.github.io/tribewebsite/assets/og-image.png" />
+  <meta property="og:url" content="https://philipsantiago.github.io/tribewebsite/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <link rel="icon" href="assets/monkey-head.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <span>🍌 Tribe is coming to iPhone soon.</span>
+    <a href="#waitlist">Get early access <span aria-hidden="true">→</span></a>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main">
+      <a href="#top" class="logo" aria-label="Tribe home">
+        <img src="assets/monkey-head.svg" alt="" width="34" height="34" />
+        <span>Tribe</span>
+      </a>
+      <div class="nav-end">
+        <a href="#waitlist" class="btn btn-primary btn-sm">Join the waitlist</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="menu" id="site-menu" hidden>
+      <a href="#how">How it works</a>
+      <a href="#play">Try it</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <svg class="circle-text" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="circ" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" /></defs>
+        <text><textPath href="#circ" textLength="500" lengthAdjust="spacing">put the phone down · call a friend · go outside · </textPath></text>
+      </svg>
+
+      <p class="eyebrow">Screen time, but make it a team sport</p>
+      <h1 class="display">
+        Less phone,<br />
+        <em>more life.</em>
+      </h1>
+      <p class="lede">
+        Tribe is the iPhone app where you and your friends cut screen time together.
+        Stay under your daily limit and your monkey cheers. Everyone makes it,
+        and the whole tribe wins the day.
+      </p>
+      <div class="hero-ctas">
+        <a href="#waitlist" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.8-1-2.8-4.1zM13.9 5.2c.7-.8 1.2-2 1-3.2-1 0-2.2.7-3 1.5-.6.7-1.2 1.9-1 3.1 1.1.1 2.3-.6 3-1.4z"/></svg>
+          Get early access
+        </a>
+        <a href="#play" class="btn btn-ghost btn-lg">See how it works</a>
+      </div>
+      <p class="fine">Free · iPhone · Coming soon to TestFlight</p>
+
+      <!-- Phone mockup -->
+      <div class="hero-stage">
+        <div class="float-card fc-left" aria-hidden="true">
+          <span class="fc-emoji">🔥</span>
+          <div><strong>12 day streak</strong><small>No-Scroll Squad</small></div>
+        </div>
+        <div class="float-card fc-right" aria-hidden="true">
+          <span class="fc-emoji">🍌</span>
+          <div><strong>+22 bananas</strong><small>Everyone made it today</small></div>
+        </div>
+
+        <div class="phone" role="img" aria-label="The Tribe app showing a tribe of four happy monkeys with a 12 day streak">
+          <div class="phone-notch"></div>
+          <div class="screen">
+            <div class="scr-top">
+              <span class="scr-title">No-Scroll Squad</span>
+              <span class="scr-pill">2h / day</span>
+            </div>
+            <div class="scr-streak">
+              <span class="flame">🔥</span>
+              <span class="big">12</span>
+              <span class="lbl">day streak</span>
+            </div>
+            <div class="scr-grid">
+              <div class="tile"><img src="assets/monkey-happy.svg" alt="" /><span>@maya</span><b class="ok">✓</b></div>
+              <div class="tile"><img src="assets/monkey-wave.svg" alt="" /><span>@dev</span><b class="ok">✓</b></div>
+              <div class="tile"><img src="assets/monkey-wave.svg" alt="" /><span>@sam</span><b class="ok">✓</b></div>
+              <div class="tile"><img src="assets/monkey-happy.svg" alt="" /><span>@you</span><b class="ok">✓</b></div>
+            </div>
+            <div class="scr-status">All clear today 🌴</div>
+            <div class="scr-tabs"><span>🏠</span><span class="plus">＋</span><span>🐵</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tilted ribbon (Wispr-style marquee) -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>📚 read a chapter</span><span>🏃 went for a run</span><span>🍳 cooked dinner</span><span>☎️ called mom</span><span>🌅 watched the sunset</span><span>🎸 played guitar</span><span>😴 slept on time</span><span>🧺 picnic in the park</span>
+        <span>📚 read a chapter</span><span>🏃 went for a run</span><span>🍳 cooked dinner</span><span>☎️ called mom</span><span>🌅 watched the sunset</span><span>🎸 played guitar</span><span>😴 slept on time</span><span>🧺 picnic in the park</span>
+      </div>
+    </div>
+
+    <!-- CALCULATOR (Wispr's "4x faster" moment, but yours) -->
+    <section class="section calc" id="calc">
+      <p class="eyebrow">Do the math</p>
+      <h2 class="h2">How much life is <em>hiding in your phone?</em></h2>
+      <div class="calc-card">
+        <div class="calc-inputs">
+          <label class="slider">
+            <span class="slider-top"><span>My screen time today</span><output id="nowOut">5h</output></span>
+            <input type="range" id="now" min="1" max="10" step="0.25" value="5" />
+          </label>
+          <label class="slider">
+            <span class="slider-top"><span>My Tribe goal</span><output id="goalOut">2h</output></span>
+            <input type="range" id="goal" min="0.5" max="8" step="0.25" value="2" />
+          </label>
+        </div>
+        <div class="calc-result" aria-live="polite">
+          <div class="calc-big"><span id="hours">1,095</span><small>hours back every year</small></div>
+          <div class="calc-equiv">
+            <div><b id="days">46</b><span>full days</span></div>
+            <div><b id="books">156</b><span>novels read</span></div>
+            <div><b id="dinners">547</b><span>long dinners</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <p class="eyebrow">How it works</p>
+      <h2 class="h2">Three steps. <em>Zero willpower required.</em></h2>
+      <p class="sub">Okay, a little willpower. But it's way easier when your friends are counting on you.</p>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-art art-1">
+            <div class="dial">
+              <span class="dial-num">2h</span>
+              <span class="dial-lbl">a day</span>
+            </div>
+            <div class="app-chips"><span>📸</span><span>👻</span><span>▶️</span></div>
+          </div>
+          <span class="step-n">1</span>
+          <h3>Pick your limit</h3>
+          <p>Choose the apps that eat your day and set a daily limit, anywhere from 30 minutes to 8 hours. Tribe uses Apple's Screen Time to notice when you go over.</p>
+        </article>
+        <article class="step">
+          <div class="step-art art-2">
+            <div class="invite-bubble">
+              <span>🐵 Join <b>No-Scroll Squad</b>?</span>
+              <span class="ib-btn">Join</span>
+            </div>
+            <div class="avatars"><span>🙋‍♀️</span><span>🧑‍💻</span><span>👩‍🍼</span><span class="more">+3</span></div>
+          </div>
+          <span class="step-n">2</span>
+          <h3>Rally your tribe</h3>
+          <p>Invite 1 to 5 friends by username, or drop one link in the group chat. Everyone in the tribe shares the same goal.</p>
+        </article>
+        <article class="step">
+          <div class="step-art art-3">
+            <img src="assets/monkey-happy.svg" alt="" class="bob" />
+            <span class="banana b1">🍌</span><span class="banana b2">🍌</span><span class="banana b3">🍌</span>
+          </div>
+          <span class="step-n">3</span>
+          <h3>Win the day together</h3>
+          <p>If everyone stays under, the tribe wins: the streak grows and bananas rain down. If one person goes over, the streak resets for everyone. That's the fun part.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DEMO -->
+    <section class="section play" id="play">
+      <p class="eyebrow">Try it</p>
+      <h2 class="h2">Tap a monkey. <em>Feel the pressure.</em></h2>
+      <p class="sub">Each monkey is a friend. Tap one to send them over the limit and see what happens to the tribe.</p>
+
+      <div class="play-board">
+        <div class="play-status" id="playStatus" aria-live="polite">
+          <span class="ps-emoji">🔥</span>
+          <div>
+            <strong id="psTitle">Everyone's under. The streak lives!</strong>
+            <small id="psSub">Day 13 of the streak · +23 bananas each tonight</small>
+          </div>
+        </div>
+        <div class="troop" id="troop">
+          <button class="mk" data-name="Maya" aria-pressed="false"><img src="assets/monkey-wave.svg" alt="" /><span class="mk-name">Maya</span><span class="mk-tag">under ✓</span></button>
+          <button class="mk" data-name="Dev" aria-pressed="false"><img src="assets/monkey-wave.svg" alt="" /><span class="mk-name">Dev</span><span class="mk-tag">under ✓</span></button>
+          <button class="mk" data-name="Sam" aria-pressed="false"><img src="assets/monkey-wave.svg" alt="" /><span class="mk-name">Sam</span><span class="mk-tag">under ✓</span></button>
+          <button class="mk" data-name="You" aria-pressed="false"><img src="assets/monkey-wave.svg" alt="" /><span class="mk-name">You</span><span class="mk-tag">under ✓</span></button>
+        </div>
+        <div class="play-actions">
+          <button class="btn btn-primary" id="endDay">🌙 End the day</button>
+          <button class="btn btn-ghost" id="resetDay">Reset</button>
+        </div>
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- FEATURES GRID -->
+    <section class="section" id="features">
+      <p class="eyebrow">The good stuff</p>
+      <h2 class="h2">Built to get you <em>off</em> the app.</h2>
+      <p class="sub">Weird thing for an app to say, we know. Everything in Tribe happens after the day ends, so there's nothing to check and nothing to grind.</p>
+
+      <div class="bento">
+        <article class="card c-streak">
+          <h3>🔥 Shared streaks</h3>
+          <p>Your tribe streak grows every day you all make it. You also keep a personal streak that's yours alone.</p>
+          <div class="streak-row" aria-hidden="true">
+            <span class="d on">M</span><span class="d on">T</span><span class="d on">W</span><span class="d on">T</span><span class="d on">F</span><span class="d on">S</span><span class="d today">S</span>
+          </div>
+        </article>
+        <article class="card c-shield">
+          <h3>🛡️ Tribe Shields</h3>
+          <p>Rough day? A shield saves the streak automatically. You earn one for every 7 days in a row. You can never buy them.</p>
+        </article>
+        <article class="card c-banana">
+          <h3>🍌 Bananas</h3>
+          <p>Earned only for time off your phone, never for opening the app. Some day you'll be able to spend them on monkey outfits, or on planting a real tree.</p>
+        </article>
+        <article class="card c-badges">
+          <h3>🏅 16 badges</h3>
+          <div class="badge-row" aria-hidden="true"><span>🍌</span><span>🗓️</span><span>🧘</span><span>🦍</span><span>💯</span></div>
+          <p>From First Banana to Century Troop. They're awarded automatically, so you don't have to check.</p>
+        </article>
+        <article class="card c-tz">
+          <h3>🌍 Fair across time zones</h3>
+          <p>Friend in Tokyo, you in LA? Each person is judged on their own local day, and the tribe's result posts once everyone's day is over.</p>
+        </article>
+        <article class="card c-link">
+          <h3>🔗 One-link invites</h3>
+          <p>Drop a link in the group chat. Friends tap it, see the deal, and join in one tap.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <h2 class="h2 center">Good <em>questions.</em></h2>
+      <div class="faq-list">
+        <details>
+          <summary>How does Tribe know my screen time?</summary>
+          <p>Tribe uses Apple's official Screen Time framework. You pick the apps and set a limit, and iOS tells Tribe when you've gone over. Tribe never sees what you did in those apps.</p>
+        </details>
+        <details>
+          <summary>What can my friends actually see?</summary>
+          <p>A ✓ or an ✗ for each day. Never your minutes, never when you went over, and never what you did on your phone. <a href="privacy.html">Everything they can and can't see</a>.</p>
+        </details>
+        <details>
+          <summary>What happens if one person goes over?</summary>
+          <p>The tribe's day fails and the streak goes back to zero for everyone. Nobody loses bananas they already earned. If your tribe has a Shield, it saves the streak automatically.</p>
+        </details>
+        <details>
+          <summary>How big can a tribe be?</summary>
+          <p>2 to 6 people. Small enough that everyone matters, big enough to be a party. You can be in more than one tribe, each with its own limit.</p>
+        </details>
+        <details>
+          <summary>What if my phone dies all day?</summary>
+          <p>A dead phone doesn't fail your tribe. You won't earn bananas that day, and your personal streak just pauses. It doesn't break.</p>
+        </details>
+        <details>
+          <summary>Is it free?</summary>
+          <p>Yes. And we'll never sell streak repairs or shields.</p>
+        </details>
+        <details>
+          <summary>When can I get it?</summary>
+          <p>Tribe is in development for iPhone. Join the waitlist and we'll let you know when the beta opens on TestFlight.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final" id="waitlist">
+      <img src="assets/monkey-wave.svg" alt="The Tribe monkey, waving" class="final-monkey" />
+      <h2 class="display sm">Your phone can wait.<br /><em>Your tribe can't.</em></h2>
+      <p class="lede">Get early access to the beta, and bring your friends.</p>
+      <form class="waitlist" id="waitlistForm" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
+        <button class="btn btn-primary" type="submit">Join the waitlist</button>
+      </form>
+      <p class="form-msg" id="formMsg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="#top" class="logo"><img src="assets/monkey-head.svg" alt="" width="34" height="34" /><span>Tribe</span></a>
+      <p class="footer-tag">Less phone, more life.</p>
+    </div>
+    <div class="footer-cols">
+      <div><h4>Product</h4><a href="#how">How it works</a><a href="#features">Features</a><a href="#play">Try it</a></div>
+      <div><h4>Trust</h4><a href="privacy.html">Privacy</a><a href="#faq">FAQ</a></div>
+      <div><h4>Legal</h4><a href="#" aria-disabled="true">Privacy policy (soon)</a><a href="#" aria-disabled="true">Terms (soon)</a></div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Tribe. Made with 🍌 by a tribe of humans.</p>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
