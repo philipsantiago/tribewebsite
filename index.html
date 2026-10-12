@@ -298,12 +298,14 @@
       <img src="assets/monkey-wave.svg" alt="The Tribe monkey, waving" class="final-monkey" />
       <h2 class="display sm">Your phone can wait.<br /><em>Your tribe can't.</em></h2>
       <p class="lede">Get early access to the beta, and bring your friends.</p>
-      <form class="waitlist" id="waitlistForm" novalidate>
+      <!-- The waitlist opens with feat/marketing-site's join_waitlist migration; until then
+           the form is switched off rather than failing. -->
+      <form class="waitlist" id="waitlistForm" novalidate aria-disabled="true">
         <label for="email" class="sr-only">Email address</label>
-        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required />
-        <button class="btn btn-primary" type="submit">Join the waitlist</button>
+        <input id="email" name="email" type="email" placeholder="Coming soon" autocomplete="email" disabled />
+        <button class="btn btn-primary" type="submit" disabled>Opens soon</button>
       </form>
-      <p class="form-msg" id="formMsg" aria-live="polite"></p>
+      <p class="form-msg" id="formMsg" aria-live="polite">The waitlist opens soon. Check back in a few days. 🍌</p>
     </section>
   </main>
 

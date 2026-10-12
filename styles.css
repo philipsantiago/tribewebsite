@@ -427,6 +427,8 @@ input[type=range]::-moz-range-thumb {
 .final .lede { margin-top: 22px; }
 .waitlist { display: flex; gap: 8px; margin-top: 32px; background: #fff; padding: 8px; border-radius: 999px; box-shadow: var(--shadow); width: min(480px, 100%); }
 .waitlist input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 17px; padding: 0 16px; outline: none; }
+.waitlist input:disabled { cursor: not-allowed; }
+.waitlist button:disabled { opacity: .6; cursor: not-allowed; box-shadow: none; }
 .form-msg { margin-top: 14px; min-height: 1.5em; font-weight: 700; }
 .form-msg.err { color: #B4553A; }
 .form-msg.ok { color: var(--leaf); }
